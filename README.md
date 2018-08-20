@@ -10,17 +10,17 @@ Using sliding window to extract k-mers for annotation (specfically exons) in GTF
 python kmer_analysis.py -g {input_annotation_gtf}.gtf -k n -r m -o {output_bed}.bed
 
 ### Output BED Format
-column 1: chromosome number (chr1, chr2, chr3...)<br />
-column 2: start location (1445550...)<br />
-column 3: end location (1445800...)<br />
-column 4: unique id (chr1-14403:14404:ED0...)<br />
+**column 1**: chromosome number (chr1, chr2, chr3...)<br />
+**column 2**: start location (1445550...)<br />
+**column 3**: end location (1445800...)<br />
+**column 4**: unique id (chr1-14403:14404:ED0...)<br />
 
 In column 4, there are four designations for relative position (IU, EU, ED, ID) followed by a number. <br />
-IU = intron upstream<br />
-EU = exon upstream<br />
+**IU** = intron upstream<br />
+**EU** = exon upstream<br />
 followed by a number indicating how many nucleotides away from the start location<br />
 
-ED = exon downstream<br />
-ID = intron downstream<br />
+**ED** = exon downstream<br />
+**ID** = intron downstream<br />
 followed by a number indicating how many nucleotides away from the end location<br />
 
